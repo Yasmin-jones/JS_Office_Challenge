@@ -26,6 +26,18 @@ describe("Office", function() {
         expect(office.rooms()).toEqual(["roomAdded"]);
     });
 
+    it('meeting room is avaiable to use', () => {
+        expect(office.roomAvailability()).toEqual('Meeting room is avaliable')
+    });
+
+    it('meeting room is not avaliable', () =>{
+        // spyOn(office,'office.isRoomAvailable').and.returnValue(false); 
+        office.isRoomAvailable = false;
+        expect(office.roomAvailability()).toEqual('Meeting room is NOT avaliable')
+        
+
+    });
+
 
   
 
