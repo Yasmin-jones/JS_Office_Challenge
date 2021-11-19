@@ -1,14 +1,16 @@
-'use strict';
+describe("Meeting", function() {
 
-class Meeting{
+    'use strict';
 
-    constructor(name) {
-        this.name = name 
-    }
+    let meeting; 
 
-    meetingName() {
-        this.name = 'Pink room'; 
-        return this.name; 
-    }
+    beforeEach(() => {
+        meeting = new Meeting();
+      });
 
-}; 
+      it('Meeting rooms have a name', () => {
+          expect(meeting.meetingName()).toEqual('Pink room'); 
+
+      });
+    
+});

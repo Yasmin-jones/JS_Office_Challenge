@@ -1,31 +1,14 @@
-describe("Meeting", function() {
+'use strict';
 
-    'use strict';
+class Meeting{
 
-    let meeting; 
+    constructor(name) {
+        this.name = name 
+    }
 
-    beforeEach(() => {
-        meeting = new Meeting();
-      });
+    meetingName() {
+        this.name = 'Pink room'; 
+        return this.name; 
+    }
 
-      it('Meeting rooms have a name', () => {
-          expect(meeting.meetingName()).toEqual('Pink room');
-
-      });
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-});
+}; 
