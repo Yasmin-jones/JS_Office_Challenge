@@ -13,9 +13,8 @@ class Office {
     addRooms(room_in) {
         room_in = 'roomAdded'
         this.room.push(room_in)
-   
-
     }; 
+    
 
 
 

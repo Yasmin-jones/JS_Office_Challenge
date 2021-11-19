@@ -21,8 +21,11 @@ describe("Office", function() {
         expect(office.rooms()).toEqual(["roomAdded", 'roomAdded']);
   });
 
+    it ('can list rooms in the office', () => {
+        office.addRooms(room_in)
+        expect(office.rooms()).toEqual(["roomAdded"]);
+    });
 
-    
 
   
 
